@@ -1,6 +1,6 @@
 {
   "name": "winston-configure",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Declarative configuration for winston loggers.",
   "main": "index.js",
   "scripts": {
