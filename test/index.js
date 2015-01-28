@@ -54,6 +54,19 @@ describe('winston-configure', function() {
 		winston.loggers.get('myLogger').transports.should.have.property('logger-console-1');
 	});
 
+	it('should support using an additional transport', function() {
+		configure({
+			loggers: {
+				myLogger: [{
+					type: 'LogstashUDP',
+					level: 'error'
+				}]
+			}
+		});
+
+		winston.loggers.get('myLogger').transports.should.have.property('logstashUdp');
+	});
+
 	it('should support silencing a logger', function() {
 		configure({
 			loggers: {
@@ -111,14 +124,14 @@ describe('winston-configure', function() {
 			}
 		});
 
-		console.log('Default transports: ');
+		/*console.log('Default transports: ');
 		console.log(winston.loggers.default.transports);
 		console.log('myLogger transports: ');
 		console.log(winston.loggers.get('myLogger').transports);
 		console.log('myLogger2 transports: ');
 		console.log(winston.loggers.get('myLogger2').transports);
 		console.log('anotherLogger transports: ');
-		console.log(winston.loggers.get('anotherLogger').transports);
+		console.log(winston.loggers.get('anotherLogger').transports);*/
 
 	});
 
