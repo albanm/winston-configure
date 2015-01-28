@@ -1,0 +1,35 @@
+{
+  "name": "winston-configure",
+  "version": "0.0.0",
+  "description": "Declarative configuration for winston loggers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albanm/winston-configure.git"
+  },
+  "keywords": [
+    "winston",
+    "logs",
+    "declarative",
+    "json"
+  ],
+  "author": "Alban Mouton <alban.mouton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albanm/winston-configure/issues"
+  },
+  "homepage": "https://github.com/albanm/winston-configure",
+  "peerDependencies": {
+    "winston": "*"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.6.1",
+    "winston": "^0.8.3",
+    "winston-logstash-udp": "0.0.4"
+  },
+  "dependencies": {}
+}
