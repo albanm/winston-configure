@@ -1,5 +1,9 @@
 # winston-configure
 
+[![Build status](https://travis-ci.org/albanm/winston-configure.svg)](https://travis-ci.org/albanm/winston-configure)
+[![Code Climate](https://codeclimate.com/github/albanm/winston-configure/badges/gpa.svg)](https://codeclimate.com/github/albanm/winston-configure)
+[![NPM version](https://badge.fury.io/js/libxslt.svg)](http://badge.fury.io/js/libxslt)
+
 *Declarative configuration for winston loggers.*
 
 Supports:
